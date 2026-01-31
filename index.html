@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Software Portfolio | 软件作品集</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .project-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="text-slate-900">
+
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="text-xl font-bold tracking-tight text-blue-600">DevHub.</span>
+            <div class="space-x-8 text-sm font-medium text-slate-600">
+                <a href="#" class="hover:text-blue-600 transition">首页</a>
+                <a href="#projects" class="hover:text-blue-600 transition">软件项目</a>
+                <a href="mailto:your-email@example.com" class="hover:text-blue-600 transition">联系我</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-20 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-5xl font-extrabold text-slate-900 mb-6">我的软件实验室</h1>
+            <p class="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                这里展示了我独立开发并部署的一系列软件工具与实验性项目。点击下方卡片即可直接访问应用。
+            </p>
+        </div>
+    </header>
+
+    <main id="projects" class="max-w-5xl mx-auto px-6 pb-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="project-card bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col">
+                <div class="p-6 flex-grow">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mb-4">
+                        <i class="fa-solid fa-rocket text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-slate-800">Nexus Prime</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-4">
+                        高效的自动化处理引擎，支持多任务并行调度与实时监控，专为高性能场景设计。
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold uppercase rounded">React</span>
+                        <span class="px-2 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold uppercase rounded">Node.js</span>
+                        <span class="px-2 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold uppercase rounded">Docker</span>
+                    </div>
+                </div>
+                <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex justify-between items-center">
+                    <a href="https://nexus.yourdomain.com" target="_blank" class="text-blue-600 font-semibold text-sm hover:underline flex items-center">
+                        访问软件 <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i>
+                    </a>
+                    <span class="text-green-500 text-xs flex items-center">
+                        <span class="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span> 在线
+                    </span>
+                </div>
+            </div>
+
+            <div class="project-card bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col">
+                <div class="p-6 flex-grow">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600 mb-4">
+                        <i class="fa-solid fa-chart-line text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-slate-800">ROI Pro</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-4">
+                        液压行业展会投资回报率分析工具，帮助企业精确计算参展效益与获客成本。
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold uppercase rounded">Next.js</span>
+                        <span class="px-2 py-1 bg-slate-100 text-slate-600 text-[10px] font-bold uppercase rounded">Tailwind</span>
+                    </div>
+                </div>
+                <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex justify-between items-center">
+                    <a href="https://roi.yourdomain.com" target="_blank" class="text-blue-600 font-semibold text-sm hover:underline flex items-center">
+                        访问软件 <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i>
+                    </a>
+                    <span class="text-green-500 text-xs flex items-center">
+                        <span class="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span> 在线
+                    </span>
+                </div>
+            </div>
+
+            <div class="project-card bg-slate-50 rounded-2xl border border-dashed border-slate-300 overflow-hidden flex flex-col items-center justify-center p-8 text-center">
+                <div class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center text-slate-400 mb-4">
+                    <i class="fa-solid fa-plus text-xl"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-slate-400">新项目开发中</h3>
+                <p class="text-slate-400 text-xs mt-2 italic text-balance">Stay tuned for more...</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="border-t border-slate-200 py-12 bg-white">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <p class="text-slate-500 text-sm mb-4">© 2026 Crafted with ❤️ using Tailwind CSS</p>
+            <div class="flex justify-center space-x-6 text-slate-400">
+                <a href="#" class="hover:text-slate-600"><i class="fa-brands fa-github text-lg"></i></a>
+                <a href="#" class="hover:text-slate-600"><i class="fa-brands fa-x-twitter text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
